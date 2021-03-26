@@ -71,7 +71,7 @@ class Test {
 
     sink(StringUtils.parseLocaleString(taint()));
 
-    // sink(StringUtils.parseTimezoneString(taint())); // does not exist in spring 5.2.3
+    sink(StringUtils.parseTimeZoneString(taint()));
 
     sink(StringUtils.quote(taint())); // $hasTaintFlow
 
@@ -94,7 +94,7 @@ class Test {
     sink(StringUtils.tokenizeToStringArray(taint(), "")); // $hasTaintFlow
     sink(StringUtils.tokenizeToStringArray(taint(), "", true, true)); // $hasTaintFlow
 
-    sink(StringUtils.toLanguageTag(taintLocale())); // $hasTaintFlow
+    sink(StringUtils.toLanguageTag(taintLocale()));
 
     sink(StringUtils.toStringArray(taintedCollection())); // $hasTaintFlow
 
