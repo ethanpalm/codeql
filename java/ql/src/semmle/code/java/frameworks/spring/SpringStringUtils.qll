@@ -35,7 +35,6 @@ private class SpringStringUtilsModel extends SummaryModelCsv {
         "org.springframework.util;StringUtils;false;splitArrayElementsIntoProperties;;;Argument[0];ReturnValue;taint",
         "org.springframework.util;StringUtils;false;stripFilenameExtension;;;Argument[0];ReturnValue;taint",
         "org.springframework.util;StringUtils;false;tokenizeToStringArray;;;Argument[0];ReturnValue;taint",
-        "org.springframework.util;StringUtils;false;toLanguageTag;;;Argument[0];ReturnValue;taint",
         "org.springframework.util;StringUtils;false;toStringArray;;;Argument[0];ReturnValue;taint",
         "org.springframework.util;StringUtils;false;trimAllWhitespace;;;Argument[0];ReturnValue;taint",
         "org.springframework.util;StringUtils;false;trimArrayElements;;;Argument[0];ReturnValue;taint",
